@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forever Best Friends | Friendship Flower Garden 🌸</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Floating Hearts & Sparkles Background Canvas -->
+    <canvas id="hearts-canvas"></canvas>
+
+    <!-- Ambient Glow Overlay -->
+    <div class="romantic-overlay"></div>
+
+    <!-- Romantic Title Header -->
+    <header class="romantic-header">
+      <h1 class="romantic-title">Forever Best Friends 🌸</h1>
+      <p class="romantic-subtitle">
+        A glowing garden celebrating friendship, laughter, and beautiful
+        memories
+      </p>
+    </header>
+
+    <!-- Control Actions Bar (Top Right) -->
+    <div class="control-bar">
+      <button id="note-btn" class="glass-btn" title="Read Love Letter">
+        <span class="btn-icon">💌</span>
+        <span class="btn-text">Friendship Note</span>
+      </button>
+      <button id="bloom-btn" class="glass-btn" title="Burst Hearts">
+        <span class="btn-icon">💖</span>
+        <span class="btn-text">Send Smiles</span>
+      </button>
+    </div>
+
+    <!-- Play Music Button (Bottom Right Corner) -->
+    <button
+      id="music-btn"
+      class="glass-btn music-btn-bottom-right"
+      title="Toggle Romantic Music"
+    >
+      <span class="btn-icon">🎵</span>
+      <span class="btn-text">Play Music</span>
+    </button>
+
+    <!-- Ground & Flowers Container -->
+    <div class="ground">
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+      <div class="flower-container"></div>
+    </div>
+
+    <!-- Romantic Love Letter Modal -->
+    <div id="love-modal" class="modal-overlay hidden">
+      <div class="glass-modal">
+        <button id="close-modal" class="close-btn">&times;</button>
+        <div class="modal-heart">🌸</div>
+        <h2 class="modal-title">To My Amazing Best Friend</h2>
+        <p id="typewriter-text" class="modal-text"></p>
+        <div class="modal-footer">
+          <button id="heart-burst-btn" class="romantic-action-btn">
+            Send Extra Hearts ❤️
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
